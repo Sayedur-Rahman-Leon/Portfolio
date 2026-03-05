@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayedur Rahman Leon | Premium Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <style>
+        :root {
+            --bg: #0b1220;
+            --card: #121a2b;
+            --text: #e6edf6;
+            --accent: #4fd1ff;
+            --glass: rgba(255, 255, 255, 0.05);
+        }
+
+        body.light {
+            --bg: #f1f5f9;
+            --card: #ffffff;
+            --text: #0f172a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            transition: 0.4s;
+            overflow-x: hidden
+        }
+
+        /* Page Transition Overlay */
+        #page-transition {
+            position: fixed;
+            inset: 0;
+            background: var(--accent);
+            transform: translateY(100%);
+            z-index: 3000;
+        }
+
+        #loader {
+            position: fixed;
+            inset: 0;
+            background: var(--bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            flex-direction: column
+        }
+
+        .loader-text {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: var(--accent)
+        }
+
+        .loader-bar {
+            width: 200px;
+            height: 4px;
+            background: #1e293b;
+            margin-top: 15px;
+            overflow: hidden;
+            border-radius: 10px
+        }
+
+        .loader-bar div {
+            height: 100%;
+            width: 0;
+            background: var(--accent)
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(11, 18, 32, 0.7);
+            backdrop-filter: blur(14px);
+            z-index: 1000
+        }
+
+        header h1 {
+            color: var(--accent)
+        }
+
+        nav {
+            display: flex;
+            align-items: center
+        }
+
+        nav a {
+            margin-left: 25px;
+            color: var(--text);
+            text-decoration: none;
+            font-size: 14px;
+            position: relative
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: 0.3s
+        }
+
+        nav a:hover::after {
+            width: 100%
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 22px;
+            cursor: pointer
+        }
+
+        .toggle {
+            margin-left: 20px;
+            cursor: pointer;
+            padding: 6px 12px;
+            background: var(--accent);
+            border-radius: 6px;
+            color: #000;
+            font-size: 12px
+        }
+
+        section {
+            padding: 120px 8%
+        }
+
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+            padding-top: 150px
+        }
+
+        #stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1
+        }
+
+        .hero h2 {
+            font-size: clamp(32px, 5vw, 56px);
+            margin-bottom: 15px
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 14px 28px;
+            background: var(--accent);
+            color: #000;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            position: relative;
+            transition: transform 0.2s ease
+        }
+
+        .hero-img img {
+            width: 160px;
+            border-radius: 50%;
+            border: 4px solid var(--accent);
+            box-shadow: 0 0 60px var(--accent);
+            margin-bottom: 25px;
+            animation: float 4s ease-in-out infinite
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0)
+            }
+
+            50% {
+                transform: translateY(-15px)
+            }
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: clamp(24px, 4vw, 34px);
+            margin-bottom: 50px
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px
+        }
+
+        .card {
+            background: var(--glass);
+            backdrop-filter: blur(12px);
+            padding: 30px;
+            border-radius: 20px;
+            transition: 0.4s;
+            border: 1px solid rgba(255, 255, 255, 0.05)
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4)
+        }
+
+        .progress {
+            background: #1e293b;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-top: 12px
+        }
+
+        .progress div {
+            height: 8px;
+            background: var(--accent);
+            width: 0
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: auto
+        }
+
+        .timeline-line {
+            position: absolute;
+            width: 4px;
+            background: var(--accent);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: scaleY(0);
+            transform-origin: top
+        }
+
+        .timeline-item {
+            padding: 20px 40px;
+            position: relative;
+            width: 50%
+        }
+
+        .timeline-dot {
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            background: var(--accent);
+            border-radius: 50%;
+            top: 25px;
+            right: -9px
+        }
+
+        .timeline-item.left {
+            left: 0
+        }
+
+        .timeline-item.right {
+            left: 50%
+        }
+
+        .timeline-item.right .timeline-dot {
+            left: -9px
+        }
+
+        .timeline-content {
+            background: var(--glass);
+            padding: 20px;
+            border-radius: 15px
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 18px
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 14px;
+            border-radius: 8px;
+            border: none;
+            background: var(--card);
+            color: var(--text);
+            width: 100%
+        }
+
+        .contact-form button {
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            background: var(--accent);
+            font-weight: 600;
+            cursor: pointer
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            border-top: 1px solid #1e293b
+        }
+
+        @media(max-width:768px) {
+            nav {
+                position: absolute;
+                top: 70px;
+                right: 0;
+                background: var(--card);
+                flex-direction: column;
+                width: 220px;
+                padding: 25px;
+                display: none;
+                border-radius: 15px
+            }
+
+            nav.active {
+                display: flex
+            }
+
+            nav a {
+                margin: 12px 0
+            }
+
+            .menu-toggle {
+                display: block
+            }
+
+            .timeline-line {
+                left: 20px
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 60px;
+                padding-right: 25px
+            }
+
+            .timeline-item.right {
+                left: 0
+            }
+
+            .timeline-dot {
+                left: 15px !important
+            }
+        }
+
+
+        /* Custom Smooth Cursor */
+        body {
+            cursor: none
+        }
+
+        .cursor-dot,
+        .cursor-outline {
+            position: fixed;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            z-index: 5000;
+        }
+
+        .cursor-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: 50%;
+        }
+
+        .cursor-outline {
+            width: 35px;
+            height: 35px;
+            border: 2px solid var(--accent);
+            border-radius: 50%;
+            transition: width 0.3s, height 0.3s, border 0.3s, background 0.3s;
+        }
+
+        .cursor-outline.hover {
+            width: 55px;
+            height: 55px;
+            background: rgba(79, 209, 255, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <div id="page-transition"></div>
+
+    <div id="loader">
+        <div class="loader-text">LEON</div>
+        <div class="loader-bar">
+            <div id="loader-progress"></div>
+        </div>
+    </div>
+
+    <header>
+        <h1>Leon</h1>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+            <span class="toggle" onclick="toggleMode()">Mode</span>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <canvas id="stars"></canvas>
+        <div>
+            <div class="hero-img"><img src="https://avatars.githubusercontent.com/u/262521682?v=4" alt="Profile"></div>
+            <h2>Sayedur Rahman Leon</h2>
+            <h3><span id="typing"></span></h3>
+            <a href="#projects" class="btn magnetic">View Projects</a>
+            <a href="#contact" class="btn magnetic">Hire Me</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="card">I build scalable web applications, AI-powered systems, and modern software solutions.</div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="card-container">
+            <div class="card">Java<div class="progress">
+                    <div data-width="85%"></div>
+                </div>
+            </div>
+            <div class="card">C#<div class="progress">
+                    <div data-width="80%"></div>
+                </div>
+            </div>
+            <div class="card">SQL<div class="progress">
+                    <div data-width="88%"></div>
+                </div>
+            </div>
+            <div class="card">AI / ML Basics<div class="progress">
+                    <div data-width="70%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="card-container">
+            <div class="card">Project Showcase Area</div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2 class="section-title">Experience & Education</h2>
+        <div class="timeline">
+            <div class="timeline-line"></div>
+            <div class="timeline-item left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>BSc in CSE</h3>
+                    <p>American International University-Bangladesh</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Desktop App</h3>
+                    <p>Gym Management Systems</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <form class="contact-form" action="#" method="POST">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="magnetic">Send Message</button>
+        </form>
+    </section>
+
+    <footer>© 2026 Sayedur Rahman Leon. All rights reserved.</footer>
+
+    <script>
+        function toggleMode() { document.body.classList.toggle('light') }
+        function toggleMenu() { document.getElementById('navMenu').classList.toggle('active') }
+
+        new Typed('#typing', { strings: ['Software Developer', 'AI Enthusiast', 'Problem Solver'], typeSpeed: 60, backSpeed: 40, loop: true });
+        ScrollReveal().reveal('.card', { interval: 200, origin: 'bottom', distance: '50px' });
+
+        window.addEventListener('load', () => {
+            gsap.to('#loader-progress', { width: '100%', duration: 1.5 });
+            gsap.to('#loader', { opacity: 0, duration: 0.8, delay: 1.6, onComplete: () => document.getElementById('loader').style.display = 'none' });
+        });
+
+        // Magnetic Buttons
+        const magnetics = document.querySelectorAll('.magnetic');
+        magnetics.forEach(btn => {
+            btn.addEventListener('mousemove', e => {
+                const rect = btn.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                btn.style.transform = `translate(${x * 0.3}px,${y * 0.3}px)`;
+            });
+            btn.addEventListener('mouseleave', () => btn.style.transform = 'translate(0,0)');
+        });
+
+        // Timeline Animation
+        const timelineLine = document.querySelector('.timeline-line');
+        const timelineObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    gsap.to(timelineLine, { scaleY: 1, duration: 1.5 });
+                }
+            });
+        }, { threshold: 0.4 });
+        timelineObserver.observe(document.querySelector('#experience'));
+
+        // Skill Bars
+        const skillBars = document.querySelectorAll('.progress div');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.width = entry.target.dataset.width;
+                }
+            });
+        }, { threshold: 0.6 });
+        skillBars.forEach(bar => observer.observe(bar));
+
+        // Page Transition Animation
+        const transition = document.getElementById('page-transition');
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = this.getAttribute('href');
+                gsap.to(transition, {
+                    y: 0, duration: 0.5, onComplete: () => {
+                        document.querySelector(target).scrollIntoView({ behavior: 'instant' });
+                        gsap.to(transition, { y: '100%', duration: 0.5 });
+                    }
+                });
+            });
+        });
+
+        // Custom Smooth Cursor
+        const cursorDot = document.querySelector('.cursor-dot');
+        const cursorOutline = document.querySelector('.cursor-outline');
+        let mouseX = 0, mouseY = 0, outlineX = 0, outlineY = 0;
+
+        window.addEventListener('mousemove', e => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            cursorDot.style.left = mouseX + 'px';
+            cursorDot.style.top = mouseY + 'px';
+        });
+
+        function animateCursor() {
+            outlineX += (mouseX - outlineX) * 0.15;
+            outlineY += (mouseY - outlineY) * 0.15;
+            cursorOutline.style.left = outlineX + 'px';
+            cursorOutline.style.top = outlineY + 'px';
+            requestAnimationFrame(animateCursor);
+        }
+        animateCursor();
+
+        // Hover Expand Effect
+        const hoverElements = document.querySelectorAll('a, button, .magnetic, .card');
+        hoverElements.forEach(el => {
+            el.addEventListener('mouseenter', () => cursorOutline.classList.add('hover'));
+            el.addEventListener('mouseleave', () => cursorOutline.classList.remove('hover'));
+        });
+
+        // Stars
+        const canvas = document.getElementById('stars');
+        const ctx = canvas.getContext('2d');
+        function resize() { canvas.width = window.innerWidth; canvas.height = window.innerHeight }
+        resize(); window.addEventListener('resize', resize);
+        let stars = [];
+        for (let i = 0; i < 150; i++) { stars.push({ x: Math.random() * canvas.width, y: Math.random() * canvas.height, size: Math.random() * 2, speed: Math.random() * 1 + 0.3 }); }
+        function animate() { ctx.clearRect(0, 0, canvas.width, canvas.height); ctx.fillStyle = 'white'; stars.forEach(s => { ctx.beginPath(); ctx.arc(s.x, s.y, s.size, 0, Math.PI * 2); ctx.fill(); s.y += s.speed; if (s.y > canvas.height) { s.y = 0; s.x = Math.random() * canvas.width; } }); requestAnimationFrame(animate); } animate();
+    </script>
+
+</body>
+
+</html>
