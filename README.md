@@ -110,3 +110,6 @@ The site applies these colors to CSS variables at runtime.
 
 ## Deployment
 The project is suitable for GitHub Pages, Netlify, Cloudflare Pages, or another static host.
+
+## Portfolio live
+ Site is live at https://sayedur-rahman-leon.github.io/Portfolio/
