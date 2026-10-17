@@ -1,0 +1,22 @@
+{
+  "media": [
+    {
+      "type": "image",
+      "title": "My Photo",
+      "caption": "Optional photo caption.",
+      "url": "https://drive.google.com/file/d/YOUR_PHOTO_FILE_ID/view?usp=sharing"
+    },
+    {
+      "type": "audio",
+      "title": "My Audio",
+      "caption": "Optional audio description.",
+      "url": "https://drive.google.com/file/d/YOUR_AUDIO_FILE_ID/view?usp=sharing"
+    },
+    {
+      "type": "video",
+      "title": "My Video",
+      "caption": "Optional video description.",
+      "url": "https://drive.google.com/file/d/YOUR_VIDEO_FILE_ID/view?usp=sharing"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Local JSON content manager for the portfolio.">
+  <meta name="theme-color" content="#0b1324">
+  <title>Portfolio Content Manager</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <main class="manager-shell">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-xl-8">
+          <div class="eyebrow">Local tool</div>
+          <h1 class="section-title mt-2">Portfolio Content Manager</h1>
+          <p class="section-copy">Select a JSON file, edit it, validate it, and download the updated file. Replace the matching file inside the <code>data/</code> folder. This static tool does not upload or overwrite server files automatically.</p>
+
+          <div class="manager-toolbar">
+            <select id="fileSelect" class="manager-select" aria-label="Select JSON file"></select>
+            <button id="reloadBtn" class="btn-ghost" type="button"><i class="bi bi-arrow-clockwise"></i> Reload</button>
+            <button id="formatBtn" class="btn-ghost" type="button"><i class="bi bi-braces"></i> Format</button>
+            <button id="validateBtn" class="btn-ghost" type="button"><i class="bi bi-check2-circle"></i> Validate</button>
+            <button id="downloadBtn" class="btn-brand" type="button"><i class="bi bi-download"></i> Download JSON</button>
+          </div>
+
+          <div id="status" class="manager-status mb-3">Loading…</div>
+          <textarea id="editor" class="manager-editor" spellcheck="false" aria-label="JSON editor"></textarea>
+        </div>
+
+        <div class="col-xl-4">
+          <div class="manager-help sticky-xl-top" style="top:7rem">
+            <div class="eyebrow">How it works</div>
+            <h2 class="h4 mt-2">Edit without touching HTML</h2>
+            <ol class="card-copy ps-3">
+              <li class="mb-2">Run the project with VS Code Live Server.</li>
+              <li class="mb-2">Open <code>content-manager.html</code>.</li>
+              <li class="mb-2">Select the JSON file you want to change.</li>
+              <li class="mb-2">Edit and press <strong>Validate</strong>.</li>
+              <li class="mb-2">Press <strong>Download JSON</strong>.</li>
+              <li>Replace the old file in <code>data/</code> with the downloaded file.</li>
+            </ol>
+            <hr class="border-secondary opacity-25">
+            <h3 class="h6">Google Drive media</h3>
+            <p class="card-copy mb-2">Use a normal public Drive sharing link:</p>
+            <pre class="small text-wrap">{"type":"video","title":"Demo","url":"https://drive.google.com/file/d/FILE_ID/view"}</pre>
+            <p class="card-copy mb-0">Supported types: <code>image</code>, <code>audio</code>, <code>video</code>, and normal links.</p>
+            <div class="mt-4"><a class="link-arrow" href="index.html"><i class="bi bi-arrow-left"></i> Back to portfolio</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="assets/js/content-manager.js"></script>
+</body>
+</html>

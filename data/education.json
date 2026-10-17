@@ -1,0 +1,87 @@
+{
+  "page": {
+    "eyebrow": "Education & Qualifications",
+    "title": "Learning that supports building and research.",
+    "description": "A structured academic profile for education, focus areas, certifications, awards, and technical qualifications.",
+    "icon": "bi-mortarboard"
+  },
+  "timeline": [
+    {
+      "date": "Current education",
+      "title": "BSc in Computer Science & Engineering",
+      "organization": "American International University-Bangladesh (AIUB)",
+      "description": "Academic direction: software development, computing foundations, application development, and research-oriented problem solving.",
+      "media": []
+    },
+    {
+      "date": "Technical focus",
+      "title": "Application Development",
+      "organization": "Academic and project-based learning",
+      "description": "C# desktop applications, web applications, software design, data handling, and implementation practice.",
+      "media": []
+    },
+    {
+      "date": "Research focus",
+      "title": "Technology & Health",
+      "organization": "Interdisciplinary research",
+      "description": "Interest in computing, data analysis, public-health problems, and evidence-driven solutions.",
+      "media": []
+    }
+  ],
+  "skills": [
+    "C#",
+    "Desktop Development",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Bootstrap",
+    "SQL",
+    "Research",
+    "Data Analysis"
+  ],
+  "qualifications": [
+    {
+      "title": "Certificates",
+      "description": "Add verified certificates, workshops, or professional training here.",
+      "icon": "bi-patch-check",
+      "media": []
+    },
+    {
+      "title": "Awards",
+      "description": "Add verified academic awards, scholarships, or competition achievements here.",
+      "icon": "bi-award",
+      "media": []
+    },
+    {
+      "title": "Courses",
+      "description": "Add selected courses, specializations, or learning milestones here.",
+      "icon": "bi-book",
+      "media": []
+    }
+  ],
+  "media": [],
+  "meta": {
+    "title": "Education & Qualifications | Sayedur Rahman Leon",
+    "description": "Education, qualifications, skills, certificates, awards, and academic media."
+  },
+  "sections": {
+    "timeline": {
+      "eyebrow": "Education",
+      "title": "Academic journey.",
+      "description": "Education and learning milestones rendered from education.json."
+    },
+    "skills": {
+      "eyebrow": "Skills",
+      "title": "Technical toolkit"
+    },
+    "qualifications": {
+      "eyebrow": "Qualifications",
+      "title": "Certificates, awards, and courses."
+    },
+    "media": {
+      "eyebrow": "Certificates & moments",
+      "title": "Education media",
+      "description": "Certificates, award photos, academic presentations, and campus moments."
+    }
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "page": {
+    "eyebrow": "Software Developer",
+    "title": "Building practical digital solutions.",
+    "description": "A structured developer profile for desktop software, web applications, databases, and problem-solving work. Add or remove projects from this JSON file without touching the HTML.",
+    "icon": "bi-code-slash"
+  },
+  "focusAreas": [
+    {
+      "title": "Desktop Development",
+      "description": "Windows-focused application work using C#, forms, event-driven programming, object-oriented design, and database connectivity.",
+      "icon": "bi-windows",
+      "skills": [
+        "C#",
+        "OOP",
+        "WinForms",
+        "Desktop UI"
+      ],
+      "media": []
+    },
+    {
+      "title": "Web Applications",
+      "description": "Responsive interfaces and practical web experiences built with semantic markup, modern CSS, Bootstrap, and JavaScript.",
+      "icon": "bi-globe2",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Bootstrap"
+      ],
+      "media": []
+    },
+    {
+      "title": "Data & Logic",
+      "description": "Database-backed application logic, structured data handling, SQL, validation, and maintainable program flow.",
+      "icon": "bi-database",
+      "skills": [
+        "SQL",
+        "Data",
+        "Validation",
+        "Problem Solving"
+      ],
+      "media": []
+    }
+  ],
+  "filters": [
+    "All",
+    "Desktop",
+    "Web",
+    "Database"
+  ],
+  "projects": [
+    {
+      "title": "C# Desktop Application",
+      "category": "Desktop",
+      "description": "Use this project card for a verified desktop application. Add the real title, screenshot, problem statement, features, and repository link.",
+      "image": "assets/img/project-desktop.svg",
+      "stack": [
+        "C#",
+        "WinForms",
+        "SQL"
+      ],
+      "github": "#",
+      "live": "#",
+      "featured": true,
+      "media": []
+    },
+    {
+      "title": "Responsive Web Application",
+      "category": "Web",
+      "description": "A ready-made project slot for a responsive web application with a concise outcome-oriented description.",
+      "image": "assets/img/project-web.svg",
+      "stack": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Bootstrap"
+      ],
+      "github": "#",
+      "live": "#",
+      "featured": true,
+      "media": []
+    },
+    {
+      "title": "Database-Backed System",
+      "category": "Database",
+      "description": "Use this card for a system that demonstrates database design, CRUD operations, joins, reporting, or data workflows.",
+      "image": "assets/img/project-data.svg",
+      "stack": [
+        "SQL",
+        "CRUD",
+        "Database Design"
+      ],
+      "github": "#",
+      "live": "#",
+      "featured": false,
+      "media": []
+    }
+  ],
+  "media": [],
+  "meta": {
+    "title": "Software Developer | Sayedur Rahman Leon",
+    "description": "Software development portfolio with projects, skills, and technical focus areas."
+  },
+  "sections": {
+    "focus": {
+      "eyebrow": "Capabilities",
+      "title": "Core development areas.",
+      "description": "Technologies and problem areas currently represented in the portfolio."
+    },
+    "projects": {
+      "eyebrow": "Projects",
+      "title": "Selected work.",
+      "description": "Filter projects by category. Add, remove, or reorder cards directly in software.json.",
+      "info": "Project content is JSON-driven. Replace the sample records with verified project details."
+    },
+    "media": {
+      "eyebrow": "Project gallery",
+      "title": "Software media",
+      "description": "Screenshots, demos, walkthrough videos, and audio notes can be linked from Google Drive or the web."
+    }
+  }
+}
