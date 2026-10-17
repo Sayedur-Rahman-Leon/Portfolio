@@ -1,0 +1,233 @@
+{
+  "meta": {
+    "title": "Sayedur Rahman Leon | Portfolio",
+    "description": "Developer, researcher, photographer, creative, and CSE student portfolio.",
+    "favicon": "assets/img/favicon.svg"
+  },
+  "settings": {
+    "defaultTheme": "dark",
+    "allowThemeSwitch": true,
+    "animations": true,
+    "showContactButton": true,
+    "showContentManagerLink": true
+  },
+  "theme": {
+    "dark": {
+      "background": "#07101F",
+      "backgroundAlt": "#0B1324",
+      "surface": "#101A2F",
+      "surfaceAlt": "#14213A",
+      "text": "#F8FAFC",
+      "muted": "#A9B7CA",
+      "primary": "#4F7CFF",
+      "secondary": "#7C5CFF",
+      "accent": "#2DD4BF",
+      "highlight": "#F5B84B",
+      "border": "#CBD5E1",
+      "white": "#FFFFFF"
+    },
+    "light": {
+      "background": "#EEF3F9",
+      "backgroundAlt": "#F7F9FC",
+      "surface": "#FFFFFF",
+      "surfaceAlt": "#EEF2F7",
+      "text": "#132033",
+      "muted": "#59677B",
+      "primary": "#315FD6",
+      "secondary": "#6947D8",
+      "accent": "#0E8F83",
+      "highlight": "#B87910",
+      "border": "#0F172A",
+      "white": "#FFFFFF"
+    },
+    "ui": {
+      "radiusLarge": "20px",
+      "radiusXL": "28px",
+      "radiusMedium": "14px"
+    }
+  },
+  "profile": {
+    "name": "Sayedur Rahman Leon",
+    "shortName": "Leon",
+    "initials": "SL",
+    "role": "CSE Student · Developer · Researcher · Creative",
+    "headline": "Building practical digital products with a creative perspective.",
+    "bio": "A Computer Science and Engineering student at American International University-Bangladesh (AIUB), focused on software development, research, and practical digital problem solving. Alongside technology, Leon explores mobile photography, music, writing, and fitness.",
+    "university": "American International University-Bangladesh (AIUB)",
+    "location": "Dhaka, Bangladesh",
+    "email": "srleon512@gmail.com",
+    "phone": "",
+    "availability": "Open to academic, software, research, and creative collaboration",
+    "avatar": "https://avatars.githubusercontent.com/u/262521682?s=400&u=9aa403c79e20ed36ed997c78894523db8afb33cd&v=4",
+    "resume": "#"
+  },
+  "navigation": [
+    {
+      "label": "Home",
+      "href": "index.html",
+      "page": "home"
+    },
+    {
+      "label": "Software",
+      "href": "software.html",
+      "page": "software"
+    },
+    {
+      "label": "Photography",
+      "href": "photography.html",
+      "page": "photography"
+    },
+    {
+      "label": "Research",
+      "href": "research.html",
+      "page": "research"
+    },
+    {
+      "label": "Music",
+      "href": "music.html",
+      "page": "music"
+    },
+    {
+      "label": "Fitness",
+      "href": "fitness.html",
+      "page": "fitness"
+    },
+    {
+      "label": "Education",
+      "href": "education.html",
+      "page": "education"
+    }
+  ],
+  "navbar": {
+    "contactLabel": "Contact",
+    "contactHref": "index.html#contact",
+    "themeLabel": "Toggle color theme"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "CSE Student · Developer · Researcher · Creative",
+      "titlePrefix": "Hey, I'm",
+      "titleHighlight": "Sayedur Rahman Leon.",
+      "primaryButtonLabel": "Explore my work",
+      "primaryButtonHref": "software.html",
+      "secondaryButtonLabel": "About me",
+      "secondaryButtonHref": "#about"
+    },
+    "about": {
+      "eyebrow": "About",
+      "title": "Technology, research, and creative work."
+    },
+    "portfolioSection": {
+      "eyebrow": "Portfolio",
+      "title": "Explore the full profile.",
+      "description": "Every portfolio area is controlled from data/site.json.",
+      "linkLabel": "View page"
+    },
+    "mediaSection": {
+      "eyebrow": "Media",
+      "title": "Featured media",
+      "description": "Photos, audio, and video loaded dynamically from JSON links."
+    }
+  },
+  "stats": [
+    {
+      "value": "6",
+      "label": "Portfolio areas"
+    },
+    {
+      "value": "CSE",
+      "label": "AIUB student"
+    },
+    {
+      "value": "Dhaka",
+      "label": "Bangladesh"
+    }
+  ],
+  "portfolioAreas": [
+    {
+      "title": "Software Developer",
+      "description": "Desktop applications, web development, data-backed systems, and problem solving.",
+      "icon": "bi-code-square",
+      "href": "software.html",
+      "media": []
+    },
+    {
+      "title": "Mobile Photography",
+      "description": "A visual portfolio for urban scenes, nature, light, and everyday storytelling.",
+      "icon": "bi-camera",
+      "href": "photography.html",
+      "media": []
+    },
+    {
+      "title": "Research",
+      "description": "Research connecting computing, data, public health, and real-world impact.",
+      "icon": "bi-journal-richtext",
+      "href": "research.html",
+      "media": []
+    },
+    {
+      "title": "Music Works",
+      "description": "Songwriting, lyrics, storytelling, and creative experiments beyond computing.",
+      "icon": "bi-music-note-beamed",
+      "href": "music.html",
+      "media": []
+    },
+    {
+      "title": "Fitness",
+      "description": "Strength training, sports, consistency, and disciplined personal development.",
+      "icon": "bi-activity",
+      "href": "fitness.html",
+      "media": []
+    },
+    {
+      "title": "Education & Qualifications",
+      "description": "Academic background, technical strengths, learning milestones, and qualifications.",
+      "icon": "bi-mortarboard",
+      "href": "education.html",
+      "media": []
+    }
+  ],
+  "socials": [
+    {
+      "label": "GitHub",
+      "icon": "bi-github",
+      "url": "#"
+    },
+    {
+      "label": "LinkedIn",
+      "icon": "bi-linkedin",
+      "url": "#"
+    },
+    {
+      "label": "Facebook",
+      "icon": "bi-facebook",
+      "url": "#"
+    }
+  ],
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let’s build something meaningful.",
+    "description": "For academic work, development, research, or creative collaboration, use the contact details below.",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "locationLabel": "Location",
+    "socialLabel": "Social profiles"
+  },
+  "footer": {
+    "copyrightTemplate": "© {year} {name}. All rights reserved.",
+    "showLocation": true,
+    "showEmail": true,
+    "editorLabel": "Content Manager"
+  },
+  "media": [],
+  "labels": {
+    "code": "Code",
+    "live": "Live",
+    "photo": "Photo",
+    "audio": "Audio",
+    "video": "Video",
+    "link": "Link",
+    "openSource": "Open source",
+    "openMedia": "Open media"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "page": {
+    "eyebrow": "Fitness",
+    "title": "Strength, consistency, discipline.",
+    "description": "A structured section for strength training, sports, goals, verified personal records, and training milestones.",
+    "icon": "bi-activity"
+  },
+  "activities": [
+    {
+      "title": "Strength Training",
+      "description": "Track training phases, progress, technique, competition preparation, or personal milestones.",
+      "icon": "bi-lightning-charge",
+      "media": []
+    },
+    {
+      "title": "Cricket",
+      "description": "A team sport emphasizing coordination, competition, and decision-making under pressure.",
+      "icon": "bi-trophy",
+      "media": []
+    },
+    {
+      "title": "Football",
+      "description": "An active outlet for movement, endurance, teamwork, and consistency.",
+      "icon": "bi-dribbble",
+      "media": []
+    }
+  ],
+  "records": [
+    {
+      "label": "Squat",
+      "value": "Add PR",
+      "note": "Verified personal record"
+    },
+    {
+      "label": "Bench",
+      "value": "Add PR",
+      "note": "Verified personal record"
+    },
+    {
+      "label": "Deadlift",
+      "value": "Add PR",
+      "note": "Verified personal record"
+    }
+  ],
+  "media": [],
+  "meta": {
+    "title": "Fitness | Sayedur Rahman Leon",
+    "description": "Fitness activities, personal records, milestones, and media."
+  },
+  "sections": {
+    "activities": {
+      "eyebrow": "Activities",
+      "title": "Training and sport.",
+      "description": "Add or remove activities, photos, clips, and progress notes from fitness.json."
+    },
+    "records": {
+      "eyebrow": "Personal records",
+      "title": "Track verified milestones.",
+      "description": "Keep only verified records and update values directly in JSON.",
+      "info": "Only enter verified personal records in fitness.json."
+    },
+    "media": {
+      "eyebrow": "Training gallery",
+      "title": "Fitness media",
+      "description": "Training photos, form-check videos, event clips, and progress media."
+    }
+  }
+}

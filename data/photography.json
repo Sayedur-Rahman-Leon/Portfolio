@@ -1,0 +1,70 @@
+{
+  "page": {
+    "eyebrow": "Mobile Photography",
+    "title": "Everyday moments, carefully framed.",
+    "description": "A responsive visual portfolio for mobile photography. Replace the sample images and metadata in this JSON file with original photographs.",
+    "icon": "bi-camera"
+  },
+  "filters": [
+    "All",
+    "Urban",
+    "Nature",
+    "Light"
+  ],
+  "items": [
+    {
+      "title": "City Stories",
+      "category": "Urban",
+      "image": "assets/img/photo-urban.svg",
+      "location": "Dhaka",
+      "device": "Mobile",
+      "caption": "A placeholder visual for urban photography.",
+      "media": []
+    },
+    {
+      "title": "Golden Hour",
+      "category": "Light",
+      "image": "assets/img/photo-light.svg",
+      "location": "Bangladesh",
+      "device": "Mobile",
+      "caption": "Use this slot for sunset, silhouette, or light studies.",
+      "media": []
+    },
+    {
+      "title": "Nature Texture",
+      "category": "Nature",
+      "image": "assets/img/photo-nature.svg",
+      "location": "Bangladesh",
+      "device": "Mobile",
+      "caption": "Use this card for landscape or nature photography.",
+      "media": []
+    },
+    {
+      "title": "Street Detail",
+      "category": "Urban",
+      "image": "assets/img/photo-street.svg",
+      "location": "Dhaka",
+      "device": "Mobile",
+      "caption": "A flexible gallery item for documentary-style street moments.",
+      "media": []
+    }
+  ],
+  "media": [],
+  "meta": {
+    "title": "Mobile Photography | Sayedur Rahman Leon",
+    "description": "Mobile photography gallery with dynamic categories, captions, and media."
+  },
+  "sections": {
+    "gallery": {
+      "eyebrow": "Gallery",
+      "title": "Visual stories.",
+      "description": "Filter photographs by category. Images can use local paths or public Google Drive links.",
+      "info": "Paste a local image path or public Google Drive photo link into photography.json."
+    },
+    "media": {
+      "eyebrow": "Media gallery",
+      "title": "More photography",
+      "description": "Additional photos, video reels, and audio commentary can be loaded dynamically."
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "page": {
+    "eyebrow": "Research",
+    "title": "Research with real-world relevance.",
+    "description": "A publication-oriented section for research interests, papers, conference work, methods, and future directions. Update the JSON to add verified publications and links.",
+    "icon": "bi-journal-richtext"
+  },
+  "interests": [
+    {
+      "title": "Technology & Health",
+      "description": "Applying computing, data, and digital systems to health-related problems.",
+      "icon": "bi-heart-pulse",
+      "media": []
+    },
+    {
+      "title": "Data-Driven Analysis",
+      "description": "Using structured evidence, statistics, and computational methods to investigate real-world questions.",
+      "icon": "bi-bar-chart-line",
+      "media": []
+    },
+    {
+      "title": "Applied Computing",
+      "description": "Building research around practical systems, measurable outcomes, and usable technology.",
+      "icon": "bi-cpu",
+      "media": []
+    }
+  ],
+  "publications": [
+    {
+      "title": "Climate Change and Vector-Borne Diseases: Dengue and Malaria Risks in Urban Bangladesh",
+      "venue": "Research / conference work",
+      "year": "2026",
+      "authors": "Sayedur Rahman Leon et al.",
+      "description": "A verified public research entry related to climate change, dengue, malaria, and urban Bangladesh.",
+      "tags": [
+        "Public Health",
+        "Climate",
+        "Data"
+      ],
+      "link": "https://portyal.aiub.edu/Files/student-research/Climate_Change_and_Vector-Borne_Diseases_Dengue_and_Malaria_Risks_in_Urban_Bangladesh.html",
+      "media": []
+    }
+  ],
+  "workflow": [
+    {
+      "step": "01",
+      "title": "Define",
+      "description": "Frame a focused research question and measurable objective."
+    },
+    {
+      "step": "02",
+      "title": "Study",
+      "description": "Review related work, methods, evidence, and limitations."
+    },
+    {
+      "step": "03",
+      "title": "Analyze",
+      "description": "Collect, clean, analyze, and interpret data with an appropriate methodology."
+    },
+    {
+      "step": "04",
+      "title": "Communicate",
+      "description": "Present findings clearly with reproducible methods and transparent limitations."
+    }
+  ],
+  "media": [],
+  "meta": {
+    "title": "Research | Sayedur Rahman Leon",
+    "description": "Research interests, publications, workflow, and supporting media."
+  },
+  "sections": {
+    "interests": {
+      "eyebrow": "Research interests",
+      "title": "Areas of investigation.",
+      "description": "The themes that currently shape the research portfolio."
+    },
+    "publications": {
+      "eyebrow": "Publications",
+      "title": "Research output.",
+      "description": "Verified papers, conference work, reports, and public research entries.",
+      "linkLabel": "View public entry"
+    },
+    "workflow": {
+      "eyebrow": "Workflow",
+      "title": "Research process"
+    },
+    "media": {
+      "eyebrow": "Supporting media",
+      "title": "Research media",
+      "description": "Posters, figures, presentation videos, dataset previews, or recorded talks."
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "page": {
+    "eyebrow": "Music Works",
+    "title": "Ideas, lyrics, and storytelling through sound.",
+    "description": "A creative portfolio for songs, lyrics, demos, performances, and writing. Add real audio links or video embeds later by editing the JSON.",
+    "icon": "bi-music-note-beamed"
+  },
+  "works": [
+    {
+      "title": "Songwriting",
+      "type": "Writing",
+      "description": "A space for original songs, lyrics, themes, and writing notes.",
+      "icon": "bi-pencil-square",
+      "link": "#",
+      "media": []
+    },
+    {
+      "title": "Demo / Recording",
+      "type": "Audio",
+      "description": "Add SoundCloud, YouTube, Drive, or another public audio link here.",
+      "icon": "bi-mic",
+      "link": "#",
+      "media": []
+    },
+    {
+      "title": "Creative Writing",
+      "type": "Story",
+      "description": "Use this card for scripts, narrative concepts, or creative writing projects.",
+      "icon": "bi-journal-text",
+      "link": "#",
+      "media": []
+    }
+  ],
+  "media": [],
+  "meta": {
+    "title": "Music Works | Sayedur Rahman Leon",
+    "description": "Music, songwriting, performances, recordings, and creative media."
+  },
+  "sections": {
+    "works": {
+      "eyebrow": "Creative work",
+      "title": "Music, writing, and performance.",
+      "description": "Each card can contain its own photos, audio tracks, videos, or external links.",
+      "linkLabel": "Open work",
+      "info": "Paste public Google Drive audio, video, or photo share links in music.json. The player is created automatically."
+    },
+    "media": {
+      "eyebrow": "Listen · Watch · View",
+      "title": "Music & performance media",
+      "description": "Audio, performance videos, cover art, and studio photos loaded from your JSON."
+    }
+  }
+}
